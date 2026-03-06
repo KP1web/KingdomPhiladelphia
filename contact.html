@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Get in touch with Kingdom Philadelphia International — visit us in Kaduna, Nigeria, call us, or send a message for counselling, prayer, or inquiry."/>
+<title>Contact Us | Kingdom Philadelphia International</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#670f10",
+          gold: "#C8A951"
+        },
+        fontFamily: {
+          display: ["Newsreader", "serif"],
+          cinzel: ["Cinzel", "serif"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  *{box-sizing:border-box;}
+  body{font-family:'Newsreader',serif;background:#f8f6f6;overflow-x:hidden;}
+  .nav-link{position:relative;padding-bottom:2px;transition:color .25s;}
+  .nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#C8A951;transition:width .3s;}
+  .nav-link:hover::after,.nav-active::after{width:100%;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+  .fade-up{opacity:0;animation:fadeUp .9s ease forwards;}
+  .delay-1{animation-delay:.15s;}.delay-2{animation-delay:.3s;}.delay-3{animation-delay:.45s;}
+  .hero-gradient{background:linear-gradient(135deg,rgba(103,15,16,0.88) 0%,rgba(26,14,14,0.55) 60%,rgba(0,0,0,0.3) 100%);}
+  #mobile-menu{max-height:0;overflow:hidden;transition:max-height .4s;}
+  #mobile-menu.open{max-height:400px;}
+  .contact-card{transition:transform .3s,box-shadow .3s;}
+  .contact-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(103,15,16,.1);}
+  input,select,textarea{outline:none;transition:border-color .25s,box-shadow .25s;}
+  input:focus,select:focus,textarea:focus{border-color:#670f10;box-shadow:0 0 0 3px rgba(103,15,16,.1);}
+</style>
+</head>
+<body class="text-slate-900 min-h-screen flex flex-col">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#f8f6f6]/95 backdrop-blur-md border-b border-[#670f10]/10 shadow-sm" role="navigation">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3" aria-label="KPI Home">
+      <img src="images/logo.png" alt="KPI logo" class="w-12 h-12 object-contain"/>
+      <div class="leading-none">
+        <span class="block text-lg font-bold tracking-widest text-[#670f10] uppercase" style="font-family:'Cinzel',serif;">KPI</span>
+        <span class="block text-[9px] uppercase tracking-[.18em] text-[#670f10]/50 font-semibold">Kingdom Philadelphia</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-[13px] uppercase tracking-widest font-semibold">
+      <a class="nav-link hover:text-[#670f10]" href="index.html">Home</a>
+      <a class="nav-link hover:text-[#670f10]" href="about.html">Identity</a>
+      <a class="nav-link hover:text-[#670f10]" href="pastorate.html">Pastorate</a>
+      <a class="nav-link hover:text-[#670f10]" href="activities.html">Teachings</a>
+      <a class="nav-link nav-active text-[#670f10]" href="contact.html">Contact</a>
+      <a class="bg-[#670f10] text-white px-5 py-2 rounded-lg hover:bg-[#8b1415] transition-all text-[12px] shadow-md" href="giving.html">Join Us</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-[#670f10]/10" aria-label="Toggle menu" aria-expanded="false">
+      <span class="material-icons text-[#670f10]">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <div class="bg-[#f8f6f6] border-t border-[#670f10]/10 px-6 py-4 flex flex-col gap-3 text-sm uppercase tracking-widest font-semibold">
+      <a href="index.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Home</a>
+      <a href="about.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Identity</a>
+      <a href="pastorate.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Pastorate</a>
+      <a href="activities.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Teachings</a>
+      <a href="contact.html" class="py-2 text-[#670f10] border-b border-[#670f10]/10">Contact</a>
+      <a href="giving.html" class="mt-2 bg-[#670f10] text-white px-5 py-2.5 rounded-lg text-center">Join Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+    <source src="images/Animation.mp4" type="video/mp4"/>
+  </video>
+  <div class="absolute inset-0 hero-gradient"></div>
+  <div class="absolute bottom-0 inset-x-0 h-28" style="background:linear-gradient(to bottom,transparent,#f8f6f6)"></div>
+  <div class="relative z-10 text-center px-6 py-20">
+    <p class="text-[#C8A951] text-sm font-bold tracking-[.25em] uppercase mb-4 fade-up" style="font-family:'Cinzel',serif;">We'd Love to Hear From You</p>
+    <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl mb-5 fade-up delay-1" style="font-family:'Cinzel',serif;">Get in Touch</h1>
+    <p class="text-white/80 italic text-lg md:text-xl max-w-2xl mx-auto fade-up delay-2">"For where two or three are gathered together in my name, there am I in the midst of them." — Matthew 18:20</p>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="flex-grow max-w-7xl mx-auto px-6 pb-24 w-full">
+
+  <!-- Contact Cards -->
+  <section class="py-16 grid grid-cols-1 md:grid-cols-3 gap-8" aria-label="Contact options">
+    <!-- Address -->
+    <div class="contact-card bg-white p-8 rounded-2xl border border-[#670f10]/5 shadow-sm group fade-up delay-1">
+      <div class="w-12 h-12 bg-[#670f10]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#670f10] transition-colors">
+        <span class="material-icons text-[#670f10] group-hover:text-white transition-colors">location_on</span>
+      </div>
+      <h3 class="text-xl font-bold text-[#670f10] mb-4" style="font-family:'Cinzel',serif;">Our Sanctuary</h3>
+      <address class="not-italic text-slate-600 leading-relaxed mb-6">
+        Kingdom Philadelphia International<br/>
+        No. 24 Yohanna Madaki Street<br/>
+        Sabo GRA, Kaduna, Nigeria
+      </address>
+      <div class="rounded-xl overflow-hidden">
+        <img src="images/Church_Enviroment.PNG" alt="Church building" class="w-full h-40 object-cover hover:scale-105 transition-transform duration-500"/>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="contact-card bg-white p-8 rounded-2xl border border-[#670f10]/5 shadow-sm group fade-up delay-2">
+      <div class="w-12 h-12 bg-[#670f10]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#670f10] transition-colors">
+        <span class="material-icons text-[#670f10] group-hover:text-white transition-colors">phone_in_talk</span>
+      </div>
+      <h3 class="text-xl font-bold text-[#670f10] mb-4" style="font-family:'Cinzel',serif;">Speak With Us</h3>
+      <div class="mb-6">
+        <p class="text-xs font-bold text-[#670f10] uppercase tracking-widest mb-2">General Inquiries</p>
+        <a class="text-xl font-bold text-slate-800 hover:text-[#670f10] transition-colors" href="tel:08036045430">08036045430</a>
+      </div>
+      <div class="p-5 bg-[#670f10]/5 border border-[#670f10]/10 rounded-xl">
+        <p class="text-xs font-bold text-[#670f10] uppercase tracking-widest mb-2">Prayer &amp; Counselling</p>
+        <a class="text-xl font-bold text-[#670f10] hover:underline block" href="tel:08036045430">08036045430</a>
+        <a class="text-lg text-[#670f10]/80 hover:underline block mt-1" href="tel:07032170838">07032170838</a>
+      </div>
+      <div class="mt-5 p-4 bg-[#f8f6f6] rounded-xl">
+        <p class="text-xs font-bold text-[#670f10] uppercase tracking-widest mb-2">Office Hours</p>
+        <p class="text-slate-600 text-sm">Mon – Sun: 11:00 AM – 3:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Digital -->
+    <div class="contact-card bg-white p-8 rounded-2xl border border-[#670f10]/5 shadow-sm group fade-up delay-3">
+      <div class="w-12 h-12 bg-[#670f10]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#670f10] transition-colors">
+        <span class="material-icons text-[#670f10] group-hover:text-white transition-colors">share</span>
+      </div>
+      <h3 class="text-xl font-bold text-[#670f10] mb-4" style="font-family:'Cinzel',serif;">Digital Fellowship</h3>
+      <div class="mb-4">
+        <p class="text-xs font-bold text-[#670f10] uppercase tracking-widest mb-2">Email</p>
+        <a href="mailto:kingdomphiladelphia@hotmail.com" class="text-slate-700 hover:text-[#670f10] transition-colors break-all">kingdomphiladelphia@hotmail.com</a>
+      </div>
+      <div class="space-y-3 mt-6">
+        <a class="flex items-center gap-3 p-4 rounded-xl bg-[#f8f6f6] hover:bg-[#670f10]/5 transition-colors" href="https://www.facebook.com/share/14U7r1gaQRh/" target="_blank" rel="noopener noreferrer" >
+          <div class="w-8 h-8 rounded-lg bg-[#670f10]/10 flex items-center justify-center"><span class="material-icons text-[#670f10] text-sm">facebook</span></div>
+          <span class="font-medium text-slate-700">Facebook Page</span>
+        </a>
+        <a class="flex items-center gap-3 p-4 rounded-xl bg-[#f8f6f6] hover:bg-blue-50 transition-colors" href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(42,171,238,0.15)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" style="fill:#2AABEE"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></div>
+          <span class="font-medium text-slate-700">Telegram (Sermons)</span>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="mb-16 fade-up" aria-labelledby="form-heading">
+    <div class="max-w-3xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-2xl border border-[#670f10]/5 p-8 md:p-12">
+        <p class="text-xs uppercase tracking-[.2em] text-[#670f10]/60 font-bold mb-3">Reach Out</p>
+        <h2 id="form-heading" class="text-2xl font-bold text-[#670f10] mb-2" style="font-family:'Cinzel',serif;">Send Us a Message</h2>
+        <p class="text-sm text-slate-500 mb-8">Choose a reason and tell us how we can help — counselling, prayer, giving, or general inquiry.</p>
+        <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-5" onsubmit="return handleContactSubmit(event)" novalidate>
+          <div class="flex flex-col gap-1">
+            <label for="name" class="text-xs font-bold uppercase tracking-widest text-[#670f10]/70">Full Name *</label>
+            <input id="name" name="name" required placeholder="Your full name" class="p-3 rounded-lg border border-slate-200 bg-[#f8f6f6] text-slate-800 placeholder:text-slate-400"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="email" class="text-xs font-bold uppercase tracking-widest text-[#670f10]/70">Email *</label>
+            <input id="email" name="email" type="email" required placeholder="your@email.com" class="p-3 rounded-lg border border-slate-200 bg-[#f8f6f6] text-slate-800 placeholder:text-slate-400"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="phone" class="text-xs font-bold uppercase tracking-widest text-[#670f10]/70">Phone</label>
+            <input id="phone" name="phone" placeholder="Phone number (optional)" class="p-3 rounded-lg border border-slate-200 bg-[#f8f6f6] text-slate-800 placeholder:text-slate-400"/>
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="reason" class="text-xs font-bold uppercase tracking-widest text-[#670f10]/70">Reason *</label>
+            <select id="reason" name="reason" required class="p-3 rounded-lg border border-slate-200 bg-[#f8f6f6] text-slate-800">
+              <option value="">Select a reason</option>
+              <option value="counselling">Counselling</option>
+              <option value="inquiry">Inquiry</option>
+              <option value="prayer">Prayer Request</option>
+              <option value="giving">Giving</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="md:col-span-2 flex flex-col gap-1">
+            <label for="message" class="text-xs font-bold uppercase tracking-widest text-[#670f10]/70">Message *</label>
+            <textarea id="message" name="message" required placeholder="Write your message here..." rows="5" class="p-3 rounded-lg border border-slate-200 bg-[#f8f6f6] text-slate-800 placeholder:text-slate-400 resize-none"></textarea>
+          </div>
+          <div class="md:col-span-2 flex items-center justify-between gap-4 flex-wrap">
+            <button type="submit" class="inline-flex items-center gap-2 bg-[#670f10] text-white px-8 py-3 rounded-lg font-bold shadow hover:bg-[#8b1415] transition-all hover:shadow-lg hover:-translate-y-0.5">
+              <span class="material-icons text-sm">send</span> Send Message
+            </button>
+            <p id="contactSuccess" class="hidden text-sm text-green-600 font-medium">✓ Opening your mail app — message pre-filled and ready to send!</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan Your Visit Banner -->
+  <section class="relative overflow-hidden rounded-2xl bg-[#670f10] py-16 px-8 text-center text-white fade-up" aria-label="Visit CTA">
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+      <img src="images/Church_Enviroment.PNG" alt="" role="presentation" class="w-full h-full object-cover"/>
+    </div>
+    <div class="relative z-10 max-w-3xl mx-auto">
+      <span class="material-icons text-[#C8A951] text-4xl mb-4 block">church</span>
+      <h2 class="text-3xl md:text-4xl font-bold mb-5" style="font-family:'Cinzel',serif;">Plan Your Visit</h2>
+      <p class="text-lg text-white/85 mb-10 italic leading-relaxed">
+        We'd love to welcome you in person. Whether you are seeking truth, needing prayer, or looking for a home church — experience the love of God with our family in Kaduna.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a class="bg-white text-[#670f10] px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition-all uppercase tracking-widest text-sm shadow-xl" href="activities.html">View Service Times</a>
+        <a class="border border-white/30 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-all uppercase tracking-widest text-sm" href="contact.html">Get Directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#0f0707] text-white pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10 pb-16 border-b border-white/10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <img src="images/logo.png" alt="KPI logo" class="w-12 h-12 object-contain"/>
+          <h3 class="text-xl font-bold" style="font-family:'Cinzel',serif;">Kingdom Philadelphia<br/><span class="text-sm font-normal text-white/55">International</span></h3>
+        </div>
+        <p class="text-white/65 text-base leading-relaxed mb-7 italic max-w-sm">"Building a kingdom-minded community through sound doctrine and brotherly love. Established in Nigeria, reaching the ends of the earth."</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/share/14U7r1gaQRh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#C8A951] transition-colors" ><span class="material-icons text-lg">facebook</span></a>
+          <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#2AABEE] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></a>
+          <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#2AABEE] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UC6dQtobESxsofHwdY22Aq-Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#C8A951] transition-colors"><span class="material-icons text-lg">play_arrow</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#C8A951] mb-5 uppercase tracking-widest">Navigate</h4>
+        <ul class="space-y-3 text-white/55 text-sm">
+          <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+          <li><a class="hover:text-white transition-colors" href="about.html">Identity &amp; Mission</a></li>
+          <li><a class="hover:text-white transition-colors" href="pastorate.html">Pastorate</a></li>
+          <li><a class="hover:text-white transition-colors" href="activities.html">Services &amp; Activities</a></li>
+          <li><a class="hover:text-white transition-colors" href="giving.html">Giving</a></li>
+          <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#C8A951] mb-5 uppercase tracking-widest">Contact</h4>
+        <ul class="space-y-4 text-white/55 text-sm">
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">location_on</span><address class="not-italic">No. 24 Yohanna Madaki Street,<br/>Sabo GRA, Kaduna, Nigeria</address></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">phone</span><a href="tel:08036045430" class="hover:text-white">08036045430</a></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">email</span><a href="mailto:kingdomphiladelphia@hotmail.com" class="hover:text-white transition-colors break-all">kingdomphiladelphia@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 text-center text-white/30 text-xs tracking-widest uppercase">© 2026 Kingdom Philadelphia International. All Rights Reserved.<br/><span style="opacity:.6;">Designed by <a href="https://wa.me/2347013367847" target="_blank" rel="noopener noreferrer" style="color:#C8A951;text-decoration:none;">Weblence &#8212; 07013367847</a></span></div>
+  </div>
+</footer>
+<script>
+function handleContactSubmit(e) {
+  e.preventDefault();
+  var name    = document.getElementById('name').value.trim();
+  var email   = document.getElementById('email').value.trim();
+  var phone   = document.getElementById('phone').value.trim();
+  var reason  = document.getElementById('reason').value;
+  var message = document.getElementById('message').value.trim();
+  if (!name || !email || !reason || !message) { alert('Please fill in all required fields.'); return false; }
+  var subject = encodeURIComponent('KPI Website: ' + reason + ' — ' + name);
+  var body    = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n' + (phone ? 'Phone: ' + phone + '\n' : '') + 'Reason: ' + reason + '\n\nMessage:\n' + message);
+  window.location.href = 'mailto:kingdomphiladelphia@hotmail.com?subject=' + subject + '&body=' + body;
+  var s = document.getElementById('contactSuccess');
+  if (s) s.classList.remove('hidden');
+  return false;
+}
+</script>
+<script>
+(function(){
+  var t = document.getElementById('menu-toggle');
+  var m = document.getElementById('mobile-menu');
+  if (t && m) {
+    t.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = m.classList.toggle('open');
+      t.setAttribute('aria-expanded', String(open));
+      var ic = t.querySelector('.material-icons');
+      if (ic) ic.textContent = open ? 'close' : 'menu';
+    });
+    document.addEventListener('click', function(e) {
+      if (!t.contains(e.target) && !m.contains(e.target)) {
+        m.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+        var ic = t.querySelector('.material-icons');
+        if (ic) ic.textContent = 'menu';
+      }
+    });
+  }
+  var els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        if (en.isIntersecting) { en.target.style.animationPlayState = 'running'; obs.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el) { el.style.animationPlayState = 'paused'; obs.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>

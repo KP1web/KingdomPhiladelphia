@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Learn about Kingdom Philadelphia International — our identity, mission, vision, and core values rooted in Revelation 3:8."/>
+<title>Identity &amp; Mission | Kingdom Philadelphia International</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#670f10",
+          gold: "#C8A951"
+        },
+        fontFamily: {
+          display: ["Newsreader", "serif"],
+          cinzel: ["Cinzel", "serif"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  *{box-sizing:border-box;}
+  body{font-family:'Newsreader',serif;background:#f8f6f6;color:#1a1a1a;overflow-x:hidden;}
+  .nav-link{position:relative;padding-bottom:2px;transition:color .25s;}
+  .nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#C8A951;transition:width .3s;}
+  .nav-link:hover::after,.nav-active::after{width:100%;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+  .fade-up{opacity:0;animation:fadeUp .9s ease forwards;}
+  .delay-1{animation-delay:.15s;}.delay-2{animation-delay:.3s;}.delay-3{animation-delay:.45s;}.delay-4{animation-delay:.6s;}
+  .hero-gradient{background:linear-gradient(135deg,rgba(103,15,16,0.85) 0%,rgba(26,14,14,0.55) 60%,rgba(0,0,0,0.3) 100%);}
+  .card-hover{transition:transform .3s,box-shadow .3s;}
+  .card-hover:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(103,15,16,.1);}
+  #mobile-menu{max-height:0;overflow:hidden;transition:max-height .4s;}
+  #mobile-menu.open{max-height:400px;}
+  .pull-quote{border-left:4px solid #C8A951;padding:1.5rem 2rem;background:rgba(200,169,81,.06);border-radius:0 .75rem .75rem 0;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#f8f6f6]/95 backdrop-blur-md border-b border-[#670f10]/10 shadow-sm" role="navigation">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3" aria-label="KPI Home">
+      <img src="images/logo.png" alt="KPI logo" class="w-12 h-12 object-contain"/>
+      <div class="leading-none">
+        <span class="block text-lg font-bold tracking-widest text-[#670f10] uppercase" style="font-family:'Cinzel',serif;">KPI</span>
+        <span class="block text-[9px] uppercase tracking-[.18em] text-[#670f10]/50 font-semibold">Kingdom Philadelphia</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-[13px] uppercase tracking-widest font-semibold">
+      <a class="nav-link hover:text-[#670f10]" href="index.html">Home</a>
+      <a class="nav-link nav-active text-[#670f10]" href="about.html">Identity</a>
+      <a class="nav-link hover:text-[#670f10]" href="pastorate.html">Pastorate</a>
+      <a class="nav-link hover:text-[#670f10]" href="activities.html">Teachings</a>
+      <a class="nav-link hover:text-[#670f10]" href="contact.html">Contact</a>
+      <a class="bg-[#670f10] text-white px-5 py-2 rounded-lg hover:bg-[#8b1415] transition-all text-[12px] shadow-md" href="giving.html">Join Us</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-[#670f10]/10" aria-label="Toggle menu" aria-expanded="false">
+      <span class="material-icons text-[#670f10]">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <div class="bg-[#f8f6f6] border-t border-[#670f10]/10 px-6 py-4 flex flex-col gap-3 text-sm uppercase tracking-widest font-semibold">
+      <a href="index.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Home</a>
+      <a href="about.html" class="py-2 text-[#670f10] border-b border-[#670f10]/10">Identity</a>
+      <a href="pastorate.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Pastorate</a>
+      <a href="activities.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Teachings</a>
+      <a href="contact.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Contact</a>
+      <a href="giving.html" class="mt-2 bg-[#670f10] text-white px-5 py-2.5 rounded-lg text-center">Join Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative min-h-[55vh] flex items-center justify-center overflow-hidden" aria-label="Page hero">
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+    <source src="images/Animation.mp4" type="video/mp4"/>
+  </video>
+  <div class="absolute inset-0 hero-gradient"></div>
+  <div class="absolute bottom-0 inset-x-0 h-28" style="background:linear-gradient(to bottom,transparent,#f8f6f6)"></div>
+  <div class="relative z-10 text-center px-6 py-24">
+    <p class="text-[#C8A951] text-sm font-bold tracking-[.25em] uppercase mb-4 fade-up" style="font-family:'Cinzel',serif;">Who We Are</p>
+    <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl mb-5 fade-up delay-1 leading-tight" style="font-family:'Cinzel',serif;">Identity &amp; Mission</h1>
+    <p class="text-white/80 text-lg md:text-xl italic max-w-2xl mx-auto fade-up delay-2">"A Christ-centered ministry rooted in sound doctrine, walking in the light of God's eternal love."</p>
+  </div>
+</header>
+
+<!-- SCRIPTURE SPOTLIGHT -->
+<section class="py-16 bg-white border-y border-[#670f10]/5" aria-label="Foundation scripture">
+  <div class="max-w-3xl mx-auto px-6 text-center fade-up">
+    <div class="inline-flex items-center justify-center w-14 h-14 bg-[#670f10]/10 rounded-full mb-6">
+      <span class="material-icons text-[#670f10] text-2xl">menu_book</span>
+    </div>
+    <p class="text-xs uppercase tracking-[.25em] text-[#670f10]/60 font-bold mb-4">The Foundation</p>
+    <blockquote class="text-3xl md:text-4xl italic text-slate-700 mb-5 leading-relaxed">
+      "I know thy works: behold, I have set before thee an open door, and no man can shut it: for thou hast a little strength, and hast kept my word, and hast not denied my name."
+    </blockquote>
+    <cite class="text-base font-bold text-[#670f10] not-italic tracking-widest uppercase">— Revelation 3:8 (KJV)</cite>
+    <p class="mt-8 text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+      This divine mandate forms the core of Kingdom Philadelphia International — a call to serve with faithfulness despite our own limitations, trusting in the sovereign power of the Living Word.
+    </p>
+  </div>
+</section>
+
+<!-- OUR IDENTITY -->
+<section class="py-20 bg-[#f8f6f6]" aria-labelledby="identity-heading">
+  <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div class="fade-up">
+      <p class="text-xs uppercase tracking-[.2em] text-[#670f10]/60 font-bold mb-3">Who We Are</p>
+      <h2 id="identity-heading" class="text-4xl font-bold text-[#670f10] mb-6" style="font-family:'Cinzel',serif;">Our Identity</h2>
+      <p class="text-lg text-slate-600 leading-relaxed mb-5">
+        Kingdom Philadelphia International stands upon the revelation of Jesus Christ as revealed in the Book of Revelation, particularly the message to the Church in Philadelphia — commended for faithfulness, obedience, and steadfastness.
+      </p>
+      <p class="text-lg text-slate-600 leading-relaxed mb-5">This divine commendation defines who we are. We are committed to:</p>
+      <ul class="space-y-3">
+        <li class="flex items-center gap-3 text-slate-600"><span class="material-icons text-[#C8A951] text-lg">check_circle</span> Preserving sound doctrine</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="material-icons text-[#C8A951] text-lg">check_circle</span> Walking in holiness</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="material-icons text-[#C8A951] text-lg">check_circle</span> Responding to open doors set before us by Christ</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="material-icons text-[#C8A951] text-lg">check_circle</span> Remaining faithful until the end</li>
+      </ul>
+    </div>
+    <div class="fade-up delay-2">
+      <div class="pull-quote">
+        <p class="text-2xl italic text-slate-700 leading-relaxed mb-4">"You have a little strength, have kept My word, and have not denied My name."</p>
+        <cite class="text-sm font-bold text-[#670f10] not-italic uppercase tracking-widest">— Revelation 3:8</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="py-24 bg-white" aria-labelledby="mv-heading">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14 fade-up">
+      <p class="text-xs uppercase tracking-[.2em] text-[#670f10]/60 font-bold mb-3">Purpose</p>
+      <h2 id="mv-heading" class="text-4xl md:text-5xl font-bold text-[#670f10]" style="font-family:'Cinzel',serif;">Mission &amp; Vision</h2>
+      <div class="w-14 h-0.5 bg-[#C8A951] mx-auto mt-5"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10">
+      <article class="fade-up delay-1 bg-[#f8f6f6] p-10 rounded-xl border-b-4 border-[#670f10] hover:shadow-xl transition-shadow">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 rounded-lg bg-[#670f10]/10 flex items-center justify-center">
+            <span class="material-icons text-[#670f10]">trending_up</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#670f10]" style="font-family:'Cinzel',serif;">Our Mission</h3>
+        </div>
+        <p class="text-lg text-slate-600 leading-relaxed">To spread God's love to the world by demonstrating His nature and raising a generation of brotherly love that will change the world.</p>
+      </article>
+      <article class="fade-up delay-2 bg-[#f8f6f6] p-10 rounded-xl border-b-4 border-[#C8A951] hover:shadow-xl transition-shadow">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-12 h-12 rounded-lg bg-[#C8A951]/10 flex items-center justify-center">
+            <span class="material-icons text-[#C8A951]">visibility</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#670f10]" style="font-family:'Cinzel',serif;">Our Vision</h3>
+        </div>
+        <p class="text-lg text-slate-600 leading-relaxed">Reaching the world with God's love — building communities that radiate Christ's compassion across every nation and generation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="py-24 bg-[#670f10] text-white" aria-labelledby="values-heading">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14 fade-up">
+      <h2 id="values-heading" class="text-4xl md:text-5xl font-bold mb-3" style="font-family:'Cinzel',serif;">Core Values</h2>
+      <div class="w-14 h-0.5 bg-[#C8A951] mx-auto"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="text-center p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-all fade-up delay-1">
+        <span class="material-icons text-[#C8A951] text-4xl mb-5 block">verified</span>
+        <h4 class="text-lg font-bold mb-3 uppercase tracking-wide" style="font-family:'Cinzel',serif;">Sound Doctrine</h4>
+        <p class="text-white/65 text-sm leading-relaxed">Unwavering commitment to biblical truth as revealed in the Holy Scriptures.</p>
+      </div>
+      <div class="text-center p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-all fade-up delay-2">
+        <span class="material-icons text-[#C8A951] text-4xl mb-5 block">auto_awesome</span>
+        <h4 class="text-lg font-bold mb-3 uppercase tracking-wide" style="font-family:'Cinzel',serif;">Holiness</h4>
+        <p class="text-white/65 text-sm leading-relaxed">Walking in purity and consecration, reflecting the character of our Father.</p>
+      </div>
+      <div class="text-center p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-all fade-up delay-3">
+        <span class="material-icons text-[#C8A951] text-4xl mb-5 block">favorite</span>
+        <h4 class="text-lg font-bold mb-3 uppercase tracking-wide" style="font-family:'Cinzel',serif;">Divine Love</h4>
+        <p class="text-white/65 text-sm leading-relaxed">Practical demonstration of God's love to one another and to the world.</p>
+      </div>
+      <div class="text-center p-8 border border-white/10 rounded-xl hover:bg-white/5 transition-all fade-up delay-4">
+        <span class="material-icons text-[#C8A951] text-4xl mb-5 block">bolt</span>
+        <h4 class="text-lg font-bold mb-3 uppercase tracking-wide" style="font-family:'Cinzel',serif;">Empowerment</h4>
+        <p class="text-white/65 text-sm leading-relaxed">Equipping the saints for the work of ministry and kingdom impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT OUR SANCTUARY -->
+<section class="py-20 bg-[#f8f6f6]" aria-labelledby="visit-heading">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+      <div class="md:w-1/2 p-10 lg:p-16 flex flex-col justify-center fade-up">
+        <h2 id="visit-heading" class="text-3xl font-bold text-[#670f10] mb-8" style="font-family:'Cinzel',serif;">Visit Our Sanctuary</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-[#670f10] mt-1 shrink-0">location_on</span>
+            <div>
+              <p class="font-bold text-slate-800">Physical Address</p>
+              <address class="not-italic text-slate-600 mt-1 leading-relaxed">No. 24 Yohanna Madaki Street<br/>Sabo GRA, Kaduna, Nigeria</address>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-[#670f10] mt-1 shrink-0">schedule</span>
+            <div>
+              <p class="font-bold text-slate-800">Service Times</p>
+              <p class="text-slate-600 mt-1">Sunday Service: 9:00 AM<br/>Thursday Bible Study: 5:00 PM</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-[#670f10] mt-1 shrink-0">access_time</span>
+            <div>
+              <p class="font-bold text-slate-800">Visit Hours (Weekdays)</p>
+              <p class="text-slate-600 mt-1">Monday – Sunday: 11:00 AM – 3:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="mt-10 inline-flex items-center gap-2 bg-[#670f10] text-white px-7 py-3 rounded-lg font-bold shadow hover:bg-[#8b1415] transition-all hover:shadow-lg self-start">
+          Get in Touch <span class="material-icons text-sm">arrow_forward</span>
+        </a>
+      </div>
+      <div class="md:w-1/2 min-h-[350px] relative">
+        <img src="images/Church_Enviroment.PNG" alt="Church environment" class="w-full h-full object-cover"/>
+        <div class="absolute inset-0 bg-[#670f10]/20"></div>
+        <div class="absolute bottom-6 left-6 bg-white p-4 rounded-xl shadow-xl">
+          <div class="flex items-center gap-2">
+            <span class="material-icons text-[#670f10]">place</span>
+            <span class="font-bold text-sm uppercase tracking-wide">Kaduna, Nigeria</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0f0707] text-white pt-20 pb-10" aria-label="Site footer">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10 pb-16 border-b border-white/10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <img src="images/logo.png" alt="KPI logo" class="w-12 h-12 object-contain"/>
+          <h3 class="text-xl font-bold" style="font-family:'Cinzel',serif;">Kingdom Philadelphia<br/><span class="text-sm font-normal text-white/55">International</span></h3>
+        </div>
+        <p class="text-white/65 text-base leading-relaxed mb-7 italic max-w-sm">"Building a kingdom-minded community through sound doctrine and brotherly love. Established in Nigeria, reaching the ends of the earth."</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/share/14U7r1gaQRh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#C8A951] transition-colors" ><span class="material-icons text-lg">facebook</span></a>
+          <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#2AABEE] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></a>
+          <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#2AABEE] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UC6dQtobESxsofHwdY22Aq-Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#C8A951] transition-colors"><span class="material-icons text-lg">play_arrow</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#C8A951] mb-5 uppercase tracking-widest">Navigate</h4>
+        <ul class="space-y-3 text-white/55 text-sm">
+          <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+          <li><a class="hover:text-white transition-colors" href="about.html">Identity &amp; Mission</a></li>
+          <li><a class="hover:text-white transition-colors" href="pastorate.html">Pastorate</a></li>
+          <li><a class="hover:text-white transition-colors" href="activities.html">Services &amp; Activities</a></li>
+          <li><a class="hover:text-white transition-colors" href="giving.html">Giving</a></li>
+          <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#C8A951] mb-5 uppercase tracking-widest">Contact</h4>
+        <ul class="space-y-4 text-white/55 text-sm">
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">location_on</span><address class="not-italic">No. 24 Yohanna Madaki Street,<br/>Sabo GRA, Kaduna, Nigeria</address></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">phone</span><a href="tel:08036045430" class="hover:text-white transition-colors">08036045430</a></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">email</span><a href="mailto:kingdomphiladelphia@hotmail.com" class="hover:text-white transition-colors break-all">kingdomphiladelphia@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 text-center text-white/30 text-xs tracking-widest uppercase">© 2026 Kingdom Philadelphia International. All Rights Reserved.<br/><span style="opacity:.6;">Designed by <a href="https://wa.me/2347013367847" target="_blank" rel="noopener noreferrer" style="color:#C8A951;text-decoration:none;">Weblence &#8212; 07013367847</a></span></div>
+  </div>
+</footer>
+<script>
+(function(){
+  var t = document.getElementById('menu-toggle');
+  var m = document.getElementById('mobile-menu');
+  if (t && m) {
+    t.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = m.classList.toggle('open');
+      t.setAttribute('aria-expanded', String(open));
+      var ic = t.querySelector('.material-icons');
+      if (ic) ic.textContent = open ? 'close' : 'menu';
+    });
+    document.addEventListener('click', function(e) {
+      if (!t.contains(e.target) && !m.contains(e.target)) {
+        m.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+        var ic = t.querySelector('.material-icons');
+        if (ic) ic.textContent = 'menu';
+      }
+    });
+  }
+  var els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        if (en.isIntersecting) { en.target.style.animationPlayState = 'running'; obs.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el) { el.style.animationPlayState = 'paused'; obs.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>

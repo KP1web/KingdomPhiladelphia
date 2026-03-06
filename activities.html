@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Services and activities at Kingdom Philadelphia International — Sunday services, Thursday Bible study, ministerial prayers, counselling and fellowship gatherings."/>
+<title>Services &amp; Activities | Kingdom Philadelphia International</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#670f10",
+          gold: "#C8A951"
+        },
+        fontFamily: {
+          display: ["Newsreader", "serif"],
+          cinzel: ["Cinzel", "serif"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  *{box-sizing:border-box;}
+  body{font-family:'Newsreader',serif;background:#f8f6f6;overflow-x:hidden;}
+  .nav-link{position:relative;padding-bottom:2px;transition:color .25s;}
+  .nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:#C8A951;transition:width .3s;}
+  .nav-link:hover::after,.nav-active::after{width:100%;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+  .fade-up{opacity:0;animation:fadeUp .9s ease forwards;}
+  .delay-1{animation-delay:.15s;}.delay-2{animation-delay:.3s;}.delay-3{animation-delay:.45s;}.delay-4{animation-delay:.6s;}
+  .hero-gradient{background:linear-gradient(135deg,rgba(103,15,16,0.88) 0%,rgba(26,14,14,0.55) 60%,rgba(0,0,0,0.3) 100%);}
+  #mobile-menu{max-height:0;overflow:hidden;transition:max-height .4s;}
+  #mobile-menu.open{max-height:400px;}
+  .service-card{transition:transform .3s,box-shadow .3s;}
+  .service-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(103,15,16,.1);}
+</style>
+</head>
+<body class="text-slate-900">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-[#f8f6f6]/95 backdrop-blur-md border-b border-[#670f10]/10 shadow-sm" role="navigation">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3" aria-label="KPI Home">
+      <img src="images/logo.png" alt="KPI logo" class="w-12 h-12 object-contain"/>
+      <div class="leading-none">
+        <span class="block text-lg font-bold tracking-widest text-[#670f10] uppercase" style="font-family:'Cinzel',serif;">KPI</span>
+        <span class="block text-[9px] uppercase tracking-[.18em] text-[#670f10]/50 font-semibold">Kingdom Philadelphia</span>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-7 text-[13px] uppercase tracking-widest font-semibold">
+      <a class="nav-link hover:text-[#670f10]" href="index.html">Home</a>
+      <a class="nav-link hover:text-[#670f10]" href="about.html">Identity</a>
+      <a class="nav-link hover:text-[#670f10]" href="pastorate.html">Pastorate</a>
+      <a class="nav-link nav-active text-[#670f10]" href="activities.html">Teachings</a>
+      <a class="nav-link hover:text-[#670f10]" href="contact.html">Contact</a>
+      <a class="bg-[#670f10] text-white px-5 py-2 rounded-lg hover:bg-[#8b1415] transition-all text-[12px] shadow-md" href="giving.html">Join Us</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-[#670f10]/10" aria-label="Toggle menu" aria-expanded="false">
+      <span class="material-icons text-[#670f10]">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <div class="bg-[#f8f6f6] border-t border-[#670f10]/10 px-6 py-4 flex flex-col gap-3 text-sm uppercase tracking-widest font-semibold">
+      <a href="index.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Home</a>
+      <a href="about.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Identity</a>
+      <a href="pastorate.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Pastorate</a>
+      <a href="activities.html" class="py-2 text-[#670f10] border-b border-[#670f10]/10">Teachings</a>
+      <a href="contact.html" class="py-2 hover:text-[#670f10] border-b border-[#670f10]/10">Contact</a>
+      <a href="giving.html" class="mt-2 bg-[#670f10] text-white px-5 py-2.5 rounded-lg text-center">Join Us</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative min-h-[55vh] flex items-center justify-center overflow-hidden">
+  <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+    <source src="images/Animation.mp4" type="video/mp4"/>
+  </video>
+  <div class="absolute inset-0 hero-gradient"></div>
+  <div class="absolute bottom-0 inset-x-0 h-28" style="background:linear-gradient(to bottom,transparent,#f8f6f6)"></div>
+  <div class="relative z-10 text-center px-6 py-24">
+    <p class="text-[#C8A951] text-sm font-bold tracking-[.25em] uppercase mb-4 fade-up" style="font-family:'Cinzel',serif;">Gather in His Name</p>
+    <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-2xl mb-5 fade-up delay-1" style="font-family:'Cinzel',serif;">Services &amp; Activities</h1>
+    <p class="text-white/80 italic text-lg md:text-xl max-w-2xl mx-auto fade-up delay-2">"For where two or three are gathered together in my name, there am I in the midst of them."</p>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-7xl mx-auto px-6 pb-24">
+
+  <!-- Weekly Services -->
+  <section class="py-24" aria-labelledby="services-heading">
+    <div class="text-center mb-14 fade-up">
+      <p class="text-xs uppercase tracking-[.2em] text-[#670f10]/60 font-bold mb-3">Weekly Gatherings</p>
+      <h2 id="services-heading" class="text-4xl font-bold text-[#670f10]" style="font-family:'Cinzel',serif;">Our Weekly Services</h2>
+      <div class="w-14 h-0.5 bg-[#C8A951] mx-auto mt-5"></div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <article class="service-card bg-white p-10 rounded-2xl shadow-sm border-t-4 border-[#670f10] fade-up delay-1">
+        <div class="w-14 h-14 bg-[#670f10]/10 rounded-xl flex items-center justify-center mb-6">
+          <span class="material-icons text-[#670f10] text-2xl">event_available</span>
+        </div>
+        <h3 class="text-2xl font-bold text-[#670f10] mb-2" style="font-family:'Cinzel',serif;">Sunday Service</h3>
+        <p class="text-[#C8A951] font-bold text-xl mb-4">9:00 AM</p>
+        <p class="text-slate-600 leading-relaxed">A powerful time of corporate worship, expository teaching, and heartfelt fellowship. Come expecting an encounter with the Living God.</p>
+      </article>
+      <article class="service-card bg-white p-10 rounded-2xl shadow-sm border-t-4 border-[#C8A951] fade-up delay-2">
+        <div class="w-14 h-14 bg-[#C8A951]/10 rounded-xl flex items-center justify-center mb-6">
+          <span class="material-icons text-[#C8A951] text-2xl">local_fire_department</span>
+        </div>
+        <h3 class="text-2xl font-bold text-[#670f10] mb-2" style="font-family:'Cinzel',serif;">Thursday Bible Study</h3>
+        <p class="text-[#C8A951] font-bold text-xl mb-4">5:00 PM</p>
+        <p class="text-slate-600 leading-relaxed">In-depth study of Scripture for spiritual growth and understanding. We go line by line, precept upon precept.</p>
+      </article>
+
+    <!-- KPI Meditation Class (Kiddies Programme) -->
+    <div class="grid md:grid-cols-1 gap-8 mt-8">
+      <article class="service-card bg-white p-10 rounded-2xl shadow-sm border-t-4 border-[#670f10] fade-up delay-3">
+        <div class="w-14 h-14 bg-[#670f10]/10 rounded-xl flex items-center justify-center mb-6">
+          <span class="material-icons text-[#670f10] text-2xl">child_care</span>
+        </div>
+        <h3 class="text-2xl font-bold text-[#670f10] mb-2" style="font-family:'Cinzel',serif;">KPI Meditation Class</h3>
+        <p class="text-[#C8A951] font-bold text-base mb-1">Kiddies Programme</p>
+        <p class="text-[#C8A951] font-bold text-xl mb-4">Last &amp; First Saturdays of Every Month</p>
+        <p class="text-slate-600 leading-relaxed">A special time of meditation, fun, and spiritual formation designed for our children — raising a generation rooted in the Word of God from an early age.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Ministry Activities -->
+  <section class="py-16 bg-white rounded-2xl shadow-sm mb-12 px-10 fade-up" aria-labelledby="activities-heading">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <p class="text-xs uppercase tracking-[.2em] text-[#670f10]/60 font-bold mb-3">What We Do</p>
+        <h2 id="activities-heading" class="text-3xl font-bold text-[#670f10]" style="font-family:'Cinzel',serif;">Ministry Activities</h2>
+        <div class="w-14 h-0.5 bg-[#C8A951] mx-auto mt-4"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="flex items-center gap-4 p-5 bg-[#f8f6f6] rounded-xl">
+          <span class="material-icons text-[#C8A951]">volunteer_activism</span>
+          <span class="font-semibold text-slate-700">Ministerial Prayers</span>
+        </div>
+        <div class="flex items-center gap-4 p-5 bg-[#f8f6f6] rounded-xl">
+          <span class="material-icons text-[#C8A951]">self_improvement</span>
+          <span class="font-semibold text-slate-700">Intercessory Prayers</span>
+        </div>
+        <div class="flex items-center gap-4 p-5 bg-[#f8f6f6] rounded-xl">
+          <span class="material-icons text-[#C8A951]">support_agent</span>
+          <span class="font-semibold text-slate-700">Counselling Sessions</span>
+        </div>
+        <div class="flex items-center gap-4 p-5 bg-[#f8f6f6] rounded-xl">
+          <span class="material-icons text-[#C8A951]">groups</span>
+          <span class="font-semibold text-slate-700">Fellowship Gatherings</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sermons / Telegram -->
+  <section class="py-16 text-center fade-up" aria-labelledby="sermons-heading">
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-sm border border-[#670f10]/5 p-10">
+        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full mb-5" style="background:rgba(42,171,238,0.1)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7" style="fill:#2AABEE" aria-hidden="true">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/>
+          </svg>
+        </div>
+        <h2 id="sermons-heading" class="text-3xl font-bold text-[#670f10] mb-3" style="font-family:'Cinzel',serif;">Sermons &amp; Teachings</h2>
+        <div class="w-12 h-0.5 bg-[#C8A951] mx-auto mb-5"></div>
+        <p class="text-slate-600 leading-relaxed mb-8">Our sermons, Bible studies, and ministry updates are uploaded to our Telegram channel. Join and stay connected to the Word — anytime, anywhere.</p>
+        <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-3 text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5" style="background:#2AABEE;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/>
+          </svg>
+          Access Sermons on Telegram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Hours -->
+  <section class="py-16 text-center fade-up" aria-labelledby="hours-heading">
+    <div class="max-w-2xl mx-auto">
+      <div class="w-14 h-14 bg-[#670f10]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+        <span class="material-icons text-[#670f10] text-2xl">access_time</span>
+      </div>
+      <h2 id="hours-heading" class="text-3xl font-bold text-[#670f10] mb-4" style="font-family:'Cinzel',serif;">Visit Hours</h2>
+      <p class="text-lg text-slate-600 mb-4">If you would like to see us during the week:</p>
+      <p class="text-2xl font-bold text-[#670f10]">Monday – Sunday</p>
+      <p class="text-xl text-slate-600">11:00 AM – 3:00 PM</p>
+      <a href="contact.html" class="mt-8 inline-flex items-center gap-2 bg-[#670f10] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#8b1415] transition-all shadow-lg">
+        Plan Your Visit <span class="material-icons text-sm">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- JOIN COMMUNITY BANNER -->
+<section class="relative h-[420px] w-full overflow-hidden" aria-label="Community CTA">
+  <img src="images/Church_Enviroment.PNG" alt="" role="presentation" class="absolute inset-0 w-full h-full object-cover grayscale opacity-30"/>
+  <div class="absolute inset-0 bg-[#f8f6f6]/80"></div>
+  <div class="absolute inset-0 flex items-center justify-center">
+    <div class="bg-white p-10 md:p-14 rounded-2xl shadow-2xl max-w-xl text-center mx-6 fade-up">
+      <span class="material-icons text-[#C8A951] text-4xl block mb-4">church</span>
+      <h3 class="text-3xl font-bold text-[#670f10] mb-4" style="font-family:'Cinzel',serif;">Join Our Community</h3>
+      <p class="text-slate-600 mb-8 leading-relaxed">Whether you are visiting for the first time or looking for a home church, we would love to have you with us.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a class="bg-[#670f10] text-white px-8 py-3 rounded-lg font-bold shadow-lg hover:-translate-y-0.5 transition-transform" href="contact.html">Plan A Visit</a>
+        <a class="border-2 border-[#670f10] text-[#670f10] px-8 py-3 rounded-lg font-bold hover:bg-[#670f10]/5 transition-colors" href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#0f0707] text-white pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10 pb-16 border-b border-white/10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <img src="images/logo.png" alt="KPI logo" class="w-12 h-12 object-contain"/>
+          <h3 class="text-xl font-bold" style="font-family:'Cinzel',serif;">Kingdom Philadelphia<br/><span class="text-sm font-normal text-white/55">International</span></h3>
+        </div>
+        <p class="text-white/65 text-base leading-relaxed mb-7 italic max-w-sm">"Building a kingdom-minded community through sound doctrine and brotherly love. Established in Nigeria, reaching the ends of the earth."</p>
+        <div class="flex gap-3">
+          <a href="https://www.facebook.com/share/14U7r1gaQRh/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#C8A951] transition-colors" ><span class="material-icons text-lg">facebook</span></a>
+          <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#2AABEE] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></a>
+          <a href="https://t.me/+D8YHRNcBZlQ1Mjg0" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#2AABEE] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5" style="fill:white" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.932z"/></svg></a>
+          <a href="https://www.youtube.com/channel/UC6dQtobESxsofHwdY22Aq-Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#C8A951] transition-colors"><span class="material-icons text-lg">play_arrow</span></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#C8A951] mb-5 uppercase tracking-widest">Navigate</h4>
+        <ul class="space-y-3 text-white/55 text-sm">
+          <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+          <li><a class="hover:text-white transition-colors" href="about.html">Identity &amp; Mission</a></li>
+          <li><a class="hover:text-white transition-colors" href="pastorate.html">Pastorate</a></li>
+          <li><a class="hover:text-white transition-colors" href="activities.html">Services &amp; Activities</a></li>
+          <li><a class="hover:text-white transition-colors" href="giving.html">Giving</a></li>
+          <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-[#C8A951] mb-5 uppercase tracking-widest">Contact</h4>
+        <ul class="space-y-4 text-white/55 text-sm">
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">location_on</span><address class="not-italic">No. 24 Yohanna Madaki Street,<br/>Sabo GRA, Kaduna, Nigeria</address></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">phone</span><a href="tel:08036045430" class="hover:text-white">08036045430</a></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">email</span><a href="mailto:kingdomphiladelphia@hotmail.com" class="hover:text-white transition-colors break-all">kingdomphiladelphia@hotmail.com</a></li>
+          <li class="flex gap-3"><span class="material-icons text-[#C8A951] text-base mt-0.5 shrink-0">schedule</span><span>Sun 9 AM · Thu 5 PM</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 text-center text-white/30 text-xs tracking-widest uppercase">© 2026 Kingdom Philadelphia International. All Rights Reserved.<br/><span style="opacity:.6;">Designed by <a href="https://wa.me/2347013367847" target="_blank" rel="noopener noreferrer" style="color:#C8A951;text-decoration:none;">Weblence &#8212; 07013367847</a></span></div>
+  </div>
+</footer>
+<script>
+(function(){
+  var t = document.getElementById('menu-toggle');
+  var m = document.getElementById('mobile-menu');
+  if (t && m) {
+    t.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = m.classList.toggle('open');
+      t.setAttribute('aria-expanded', String(open));
+      var ic = t.querySelector('.material-icons');
+      if (ic) ic.textContent = open ? 'close' : 'menu';
+    });
+    document.addEventListener('click', function(e) {
+      if (!t.contains(e.target) && !m.contains(e.target)) {
+        m.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+        var ic = t.querySelector('.material-icons');
+        if (ic) ic.textContent = 'menu';
+      }
+    });
+  }
+  var els = document.querySelectorAll('.fade-up');
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        if (en.isIntersecting) { en.target.style.animationPlayState = 'running'; obs.unobserve(en.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function(el) { el.style.animationPlayState = 'paused'; obs.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
